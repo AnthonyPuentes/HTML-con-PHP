@@ -1,0 +1,33 @@
+<?php
+$Cocacola=100;
+$Sabritas=500;
+$Negrito=500;
+$Malboro=500;
+$Ciel=500;
+$Marias=400;
+
+$precioiva=1.16;
+$totalArticulos=$Cocacola+$Sabritas+$Negrito+$Malboro+$Ciel+$Marias;
+$subtotal=$totalArticulos/$precioiva;
+$iva=$subtotal*0.16;
+$total=$subtotal+$iva;
+?>
+
+<body>
+
+<table Border="1">
+<tr><td>Producto</td><td>Precio</td></tr>
+<tr><td>Cocacola</td><td> $<?php echo $Cocacola;?></td></tr>
+<tr><td>Sabritas</td><td> $<?php echo $Sabritas;?></td><tr>
+<tr><td>Negrito</td><td>  $<?php echo $Negrito;?></td></tr>
+<tr><td>Malboro</td><td>  $<?php echo $Malboro;?></td></tr>
+<tr><td>Ciel</td><td>     $<?php echo $Ciel;?></td></tr>
+<tr><td>Marias</td><td>   $<?php echo $Marias;?> </td> </tr> 
+</table><br/>
+
+<table border="1">
+<tr><td> Subtotal</td><td>$<?php echo $subtotal;?></td></tr>
+<tr><td>IVA</td><td>      $<?php echo $iva;?></td></tr>
+<tr><td>Total</td><td>    $<?php echo $total;?></td></tr>
+</table>
+?>
